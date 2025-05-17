@@ -1,0 +1,43 @@
+/* userDashboard.css */
+
+.dashboard-container {
+  background-color: #f0f4f8;
+  
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+.dashboard-card {
+  background: #ffffff;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.dashboard-card:hover {
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.15);
+}
+
+.welcome-msg {
+  font-size: 1.8rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.welcome-sub {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.user-info p {
+  font-size: 1rem;
+  margin: 8px 0;
+  color: #333;
+}
+
+.user-info strong {
+  color: #6610f2;
+}

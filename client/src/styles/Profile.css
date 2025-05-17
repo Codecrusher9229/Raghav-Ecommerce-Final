@@ -1,0 +1,54 @@
+/* Profile.css */
+
+.form-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.1);
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.form-container:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.15);
+}
+
+.form-container .title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #007bff;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s border-color;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.container-fluid {
+  background-color: #f4f8fc;
+  min-height: 100vh;
+  padding: 20px;
+}

@@ -1,0 +1,135 @@
+.banner-img {
+  margin-top: 60px;
+}
+
+.home-page h1 {
+  color: gray;
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* ======= CARD STYLING ======= */
+.home-page .card {
+  background-color:white;
+  width: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.home-page .card-img-top {
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.home-page .card img:hover {
+  transform: scale(1.05);
+}
+
+/* ======= CARD BODY ======= */
+.home-page .card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page .card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.home-page .card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.home-page .card-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 12px;
+  min-height: 40px;
+}
+
+/* ======= CARD BUTTONS FIXED ALIGNMENT ======= */
+.home-page .card-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.home-page .card-buttons .btn {
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.home-page .btn-info {
+  background-color:rgb(19, 204, 19);
+  border: none;
+}
+
+.home-page .btn-dark {
+  background-color: rgb(255, 230, 0);
+  border: none;
+  color: black;
+}
+
+/* ==================
+filters
+============== */
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper,
+.ant-radio-wrapper {
+  margin: 6px 10px;
+}
+.loadmore {
+  background-color: #0d6efd;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.loadmore:hover {
+  background-color: #0b5ed7;
+}
+
+.filters h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.filters button {
+  margin-top: 20px;
+  width: 100%;
+}

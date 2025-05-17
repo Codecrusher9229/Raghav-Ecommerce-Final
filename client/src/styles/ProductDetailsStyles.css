@@ -1,0 +1,158 @@
+/* ========= Product Details Layout ========= */
+.product-details {
+  margin: 60px auto;
+  padding: 40px 20px;
+  max-width: 1200px;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details img {
+  /* max-width: 100%; */
+  width: 50vh;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.product-details img:hover {
+  transform: scale(1.03);
+}
+
+/* ========= Product Info ========= */
+.product-details-info {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+}
+
+.product-details-info h1 {
+  font-size: 32px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.product-details-info h6 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.product-details-info h6 span {
+  color: #222;
+  font-weight: 600;
+}
+
+/* ========= Add to Cart Button ========= */
+.product-details-info button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #ff3e6c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+}
+
+.product-details-info button:hover {
+  background-color: #f60035;
+}
+
+/* ========= Similar Products Section ========= */
+.similar-products {
+  margin: 60px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.similar-products h4 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* ========= Similar Product Cards ========= */
+.similar-products .card {
+  width: 260px;
+  margin: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.similar-products .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-name-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-price {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* ========= More Details Button ========= */
+.similar-products .btn-info {
+  margin-top: 12px;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.similar-products .btn-info:hover {
+  background-color: #0069d9;
+}
