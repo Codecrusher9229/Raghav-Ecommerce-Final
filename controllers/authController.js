@@ -206,8 +206,8 @@ export const getOrdersController = async (req, res) => {
   try {
     const orders = await orderModel
       .find({ buyer: req.user._id })
-      .populate("products.product") 
-      .populate("buyer", "name address");
+      .populate("products.product") // ✅ Correct this line
+      .populate("buyer", "name");
     res.json(orders);
   } catch (error) {
     console.log(error);
@@ -224,8 +224,8 @@ export const getAllOrdersController = async (req, res) => {
     const orders = await orderModel
       .find({})
       .populate("products.product", "-photo") // Correct field for nested product
-      .populate("buyer", "name")
-      .sort({ createdAt: -1 }); // ✅ Correct number value
+      .populate("buyer", "name address")
+      .sort({ createdAt: -1 });
 
     res.json(orders);
   } catch (error) {
